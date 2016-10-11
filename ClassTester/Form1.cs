@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ClassTester
 {
-    public partial class Form1 : Form
+    public partial class frmTestingFrontEnd : Form
     {
-        public Form1()
+        public frmTestingFrontEnd()
         {
             InitializeComponent();
         }
