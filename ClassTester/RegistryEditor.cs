@@ -4,15 +4,17 @@ using Microsoft.Win32;
 
 namespace ClassTester
 {
+    /// <summary>
+    /// 
+    /// </summary>
     class RegistryEditor
     {
         private readonly bool _showError = true;
-        private readonly RegistryKey _baseRegistryKey;
+        private readonly RegistryKey _baseRegistryKey = Registry.LocalMachine;
         private readonly string _subKey;
 
         public RegistryEditor(RegistryKey baseRegistryKey, string subKey)
         {
-            _baseRegistryKey = baseRegistryKey;
             _subKey = subKey;
         }
 
